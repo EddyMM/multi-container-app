@@ -20,3 +20,15 @@ deploy:
   script: bash docker_push.sh
   on:
     branch: master
+
+deploy:
+  edge: true
+  provider: elasticbeanstalk
+  region: eu-west-1
+  app: multi-docker
+  bucket-name: elasticbeanstalk-eu-west-1-152263871757
+  bucket-path: docker-multiple
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_key_id: $AWS_SECRET_KEY
