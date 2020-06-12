@@ -20,7 +20,7 @@ deploy:
   provider: elasticbeanstalk
   edge: true
   region: eu-west-1
-  app: multi-container
+  app: multi-docker
   bucket-name: elasticbeanstalk-eu-west-1-152263871757
   bucket-path: docker-multiple
   on:
