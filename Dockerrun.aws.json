@@ -5,7 +5,7 @@
             "name": "client",
             "image": "eddym/multi-client",
             "hostname": "client",
-            "essential": false,
+            "essential": false
         },
         {
             "name": "nginx",
@@ -24,13 +24,13 @@
             "name": "server",
             "image": "eddym/multi-server",
             "hostname": "api",
-            "essential": false,
+            "essential": false
         },
         {
             "name": "worker",
             "image": "eddym/multi-worker",
             "hostname": "worker",
-            "essential": false,
+            "essential": false
         }
     ]
 }
